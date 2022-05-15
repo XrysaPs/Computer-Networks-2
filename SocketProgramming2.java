@@ -29,11 +29,11 @@ public class SocketProgramming2 {
 
 	public void echo() {
 		try {
-			File responseFile = new File("C:\\Users\\user\\Desktop\\Εργασία Δίκτυα_2\\ΔΕΥΤΕΡΗ_ΣΥΝΟΔΟΣ\\ECHO\\ResponseTime_no.txt");
+			File responseFile = new File("C:\\Users\\user\\Desktop\\Γ…Γ±Γ£Γ΅Γ³ΓΓ΅ Γ„ΓΓªΓ΄ΓµΓ΅_2\\Γ„Γ…Γ•Γ”Γ…Γ‘Γ‡_Γ“Γ•ΓΓΓ„ΓΓ“\\ECHO\\ResponseTime_no.txt");
 			FileOutputStream out = new FileOutputStream(responseFile);
 			Writer w = new OutputStreamWriter(out);
 			
-			File times = new File("C:\\Users\\user\\Desktop\\Εργασία Δίκτυα_2\\ΔΕΥΤΕΡΗ_ΣΥΝΟΔΟΣ\\ECHO\\Times_no.txt");
+			File times = new File("C:\\Users\\user\\Desktop\\Γ…Γ±Γ£Γ΅Γ³ΓΓ΅ Γ„ΓΓªΓ΄ΓµΓ΅_2\\Γ„Γ…Γ•Γ”Γ…Γ‘Γ‡_Γ“Γ•ΓΓΓ„ΓΓ“\\ECHO\\Times_no.txt");
 			FileOutputStream out3 = new FileOutputStream(times);
 			Writer w3 = new OutputStreamWriter(out3);
 			
@@ -96,7 +96,7 @@ public class SocketProgramming2 {
 	
 	public void throughput(List<Integer> l, int startTime, int endTime) {
 		try {
-			File throughput = new File("C:\\Users\\user\\Desktop\\Εργασία Δίκτυα_2\\ΔΕΥΤΕΡΗ_ΣΥΝΟΔΟΣ\\ECHO\\Throughput_no.txt");
+			File throughput = new File("C:\\Users\\user\\Desktop\\Γ…Γ±Γ£Γ΅Γ³ΓΓ΅ Γ„ΓΓªΓ΄ΓµΓ΅_2\\Γ„Γ…Γ•Γ”Γ…Γ‘Γ‡_Γ“Γ•ΓΓΓ„ΓΓ“\\ECHO\\Throughput_no.txt");
 			FileOutputStream out2 = new FileOutputStream(throughput);
 			Writer w2 = new OutputStreamWriter(out2);
 			
@@ -193,7 +193,7 @@ public class SocketProgramming2 {
 			f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 			f.setVisible(true);
 			//saving the image in folder
-			ImageIO.write(bufferedImage, "jpg", new File("C:\\Users\\user\\Desktop\\Εργασία Δίκτυα_2\\ΔΕΥΤΕΡΗ_ΣΥΝΟΔΟΣ\\IMAGE\\image_FIX.jpg"));
+			ImageIO.write(bufferedImage, "jpg", new File("C:\\Users\\user\\Desktop\\Γ…Γ±Γ£Γ΅Γ³ΓΓ΅ Γ„ΓΓªΓ΄ΓµΓ΅_2\\Γ„Γ…Γ•Γ”Γ…Γ‘Γ‡_Γ“Γ•ΓΓΓ„ΓΓ“\\IMAGE\\image_FIX.jpg"));
 
 		}catch(Exception e) {
 			System.out.println(e);
@@ -264,11 +264,11 @@ public class SocketProgramming2 {
 		String audioRequest = "A8259AQL13F999";
 		
 		try {			
-			File samples = new File("C:\\Users\\user\\Desktop\\Εργασία Δίκτυα_2\\ΔΕΥΤΕΡΗ_ΣΥΝΟΔΟΣ\\SOUND_AQDPCM\\SAMPLES.txt");
+			File samples = new File("C:\\Users\\user\\Desktop\\Γ…Γ±Γ£Γ΅Γ³ΓΓ΅ Γ„ΓΓªΓ΄ΓµΓ΅_2\\Γ„Γ…Γ•Γ”Γ…Γ‘Γ‡_Γ“Γ•ΓΓΓ„ΓΓ“\\SOUND_AQDPCM\\SAMPLES.txt");
 			FileOutputStream out = new FileOutputStream(samples);
 			Writer w = new OutputStreamWriter(out);
 			
-			File difference = new File("C:\\Users\\user\\Desktop\\Εργασία Δίκτυα_2\\ΔΕΥΤΕΡΗ_ΣΥΝΟΔΟΣ\\SOUND_AQDPCM\\DIFFERENCES.txt");
+			File difference = new File("C:\\Users\\user\\Desktop\\Γ…Γ±Γ£Γ΅Γ³ΓΓ΅ Γ„ΓΓªΓ΄ΓµΓ΅_2\\Γ„Γ…Γ•Γ”Γ…Γ‘Γ‡_Γ“Γ•ΓΓΓ„ΓΓ“\\SOUND_AQDPCM\\DIFFERENCES.txt");
 			FileOutputStream out2 = new FileOutputStream(difference);
 			Writer w2 = new OutputStreamWriter(out2);
 			
@@ -322,7 +322,7 @@ public class SocketProgramming2 {
 			lineOut.write(audioBufferOut, 0, audioBufferOut.length);
 			lineOut.stop();
 			System.out.println("Audio ended.");
-			File cutaudioFile = new File ("C:\\Users\\user\\Desktop\\Εργασία Δίκτυα_2\\ΔΕΥΤΕΡΗ_ΣΥΝΟΔΟΣ\\SOUND_AQDPCM\\FREQ.wav");
+			File cutaudioFile = new File ("C:\\Users\\user\\Desktop\\Γ…Γ±Γ£Γ΅Γ³ΓΓ΅ Γ„ΓΓªΓ΄ΓµΓ΅_2\\Γ„Γ…Γ•Γ”Γ…Γ‘Γ‡_Γ“Γ•ΓΓΓ„ΓΓ“\\SOUND_AQDPCM\\FREQ.wav");
 			InputStream in=new ByteArrayInputStream(audioBufferOut);
             AudioInputStream ais = new AudioInputStream(in, linearPCM, audioBufferOut.length);
             AudioSystem.write(ais, Type.WAVE, cutaudioFile);
@@ -338,15 +338,15 @@ public class SocketProgramming2 {
 		String audioRequest = "A8971AQL08F999";
 		
 		try {
-			File samples = new File("C:\\Users\\user\\Desktop\\Εργασία Δίκτυα_2\\ΔΕΥΤΕΡΗ_ΣΥΝΟΔΟΣ\\SOUND_AQDPCM\\1.txt");
+			File samples = new File("C:\\Users\\user\\Desktop\\Γ…Γ±Γ£Γ΅Γ³ΓΓ΅ Γ„ΓΓªΓ΄ΓµΓ΅_2\\Γ„Γ…Γ•Γ”Γ…Γ‘Γ‡_Γ“Γ•ΓΓΓ„ΓΓ“\\SOUND_AQDPCM\\1.txt");
 			FileOutputStream out = new FileOutputStream(samples);
 			Writer w = new OutputStreamWriter(out);
 			
-			File difference = new File("C:\\Users\\user\\Desktop\\Εργασία Δίκτυα_2\\ΔΕΥΤΕΡΗ_ΣΥΝΟΔΟΣ\\SOUND_AQDPCM\\2.txt");
+			File difference = new File("C:\\Users\\user\\Desktop\\Γ…Γ±Γ£Γ΅Γ³ΓΓ΅ Γ„ΓΓªΓ΄ΓµΓ΅_2\\Γ„Γ…Γ•Γ”Γ…Γ‘Γ‡_Γ“Γ•ΓΓΓ„ΓΓ“\\SOUND_AQDPCM\\2.txt");
 			FileOutputStream out2 = new FileOutputStream(difference);
 			Writer w2 = new OutputStreamWriter(out2);
 			
-			File time = new File("C:\\Users\\user\\Desktop\\Εργασία Δίκτυα_2\\ΔΕΥΤΕΡΗ_ΣΥΝΟΔΟΣ\\SOUND_AQDPCM\\3.txt");
+			File time = new File("C:\\Users\\user\\Desktop\\Γ…Γ±Γ£Γ΅Γ³ΓΓ΅ Γ„ΓΓªΓ΄ΓµΓ΅_2\\Γ„Γ…Γ•Γ”Γ…Γ‘Γ‡_Γ“Γ•ΓΓΓ„ΓΓ“\\SOUND_AQDPCM\\3.txt");
 			FileOutputStream out3 = new FileOutputStream(time);
 			Writer w3 = new OutputStreamWriter(out3);
 			
@@ -403,7 +403,7 @@ public class SocketProgramming2 {
 			System.out.println("Audio is ready to play.");
 			lineOut.write(audioBufferOut, 0, audioBufferOut.length);
 			lineOut.stop();
-			File cutaudioFile = new File ("C:\\Users\\user\\Desktop\\Εργασία Δίκτυα_2\\ΔΕΥΤΕΡΗ_ΣΥΝΟΔΟΣ\\SOUND_AQDPCM\\4.wav");
+			File cutaudioFile = new File ("C:\\Users\\user\\Desktop\\Γ…Γ±Γ£Γ΅Γ³ΓΓ΅ Γ„ΓΓªΓ΄ΓµΓ΅_2\\Γ„Γ…Γ•Γ”Γ…Γ‘Γ‡_Γ“Γ•ΓΓΓ„ΓΓ“\\SOUND_AQDPCM\\4.wav");
 			InputStream in=new ByteArrayInputStream(audioBufferOut);
             AudioInputStream ais = new AudioInputStream(in, linearPCM, audioBufferOut.length);
             AudioSystem.write(ais, Type.WAVE, cutaudioFile);
@@ -416,16 +416,16 @@ public class SocketProgramming2 {
 	
 	public void ithakiCopter() {		
 		try {
-			File lmotor = new File("C:\\Users\\user\\Desktop\\Εργασία Δίκτυα_2\\ΔΕΥΤΕΡΗ_ΣΥΝΟΔΟΣ\\COPTER\\LMOTOR2.txt");
+			File lmotor = new File("C:\\Users\\user\\Desktop\\Γ…Γ±Γ£Γ΅Γ³ΓΓ΅ Γ„ΓΓªΓ΄ΓµΓ΅_2\\Γ„Γ…Γ•Γ”Γ…Γ‘Γ‡_Γ“Γ•ΓΓΓ„ΓΓ“\\COPTER\\LMOTOR2.txt");
 			FileOutputStream out = new FileOutputStream(lmotor);
 			Writer w = new OutputStreamWriter(out);
-			File rmotor = new File("C:\\Users\\user\\Desktop\\Εργασία Δίκτυα_2\\ΔΕΥΤΕΡΗ_ΣΥΝΟΔΟΣ\\COPTER\\RMOTOR2.txt");
+			File rmotor = new File("C:\\Users\\user\\Desktop\\Γ…Γ±Γ£Γ΅Γ³ΓΓ΅ Γ„ΓΓªΓ΄ΓµΓ΅_2\\Γ„Γ…Γ•Γ”Γ…Γ‘Γ‡_Γ“Γ•ΓΓΓ„ΓΓ“\\COPTER\\RMOTOR2.txt");
 			FileOutputStream out2 = new FileOutputStream(rmotor);
 			Writer w2 = new OutputStreamWriter(out2);
-			File altitude = new File("C:\\Users\\user\\Desktop\\Εργασία Δίκτυα_2\\ΔΕΥΤΕΡΗ_ΣΥΝΟΔΟΣ\\COPTER\\ALTITUDE2.txt");
+			File altitude = new File("C:\\Users\\user\\Desktop\\Γ…Γ±Γ£Γ΅Γ³ΓΓ΅ Γ„ΓΓªΓ΄ΓµΓ΅_2\\Γ„Γ…Γ•Γ”Γ…Γ‘Γ‡_Γ“Γ•ΓΓΓ„ΓΓ“\\COPTER\\ALTITUDE2.txt");
 			FileOutputStream out3 = new FileOutputStream(altitude);
 			Writer w3 = new OutputStreamWriter(out3);
-			File timeCopter = new File("C:\\Users\\user\\Desktop\\Εργασία Δίκτυα_2\\ΔΕΥΤΕΡΗ_ΣΥΝΟΔΟΣ\\COPTER\\Time_copter2.txt");
+			File timeCopter = new File("C:\\Users\\user\\Desktop\\Γ…Γ±Γ£Γ΅Γ³ΓΓ΅ Γ„ΓΓªΓ΄ΓµΓ΅_2\\Γ„Γ…Γ•Γ”Γ…Γ‘Γ‡_Γ“Γ•ΓΓΓ„ΓΓ“\\COPTER\\Time_copter2.txt");
 			FileOutputStream out4 = new FileOutputStream(timeCopter);
 			Writer w4 = new OutputStreamWriter(out4);
 			
@@ -466,7 +466,7 @@ public class SocketProgramming2 {
 
 		try {
 
-			File obd = new File("C:\\Users\\user\\Desktop\\Εργασία Δίκτυα_2\\ΔΕΥΤΕΡΗ_ΣΥΝΟΔΟΣ\\obd\\rpm.txt");
+			File obd = new File("C:\\Users\\user\\Desktop\\Γ…Γ±Γ£Γ΅Γ³ΓΓ΅ Γ„ΓΓªΓ΄ΓµΓ΅_2\\Γ„Γ…Γ•Γ”Γ…Γ‘Γ‡_Γ“Γ•ΓΓΓ„ΓΓ“\\obd\\rpm.txt");
 			FileOutputStream out2 = new FileOutputStream(obd);
 			Writer w2 = new OutputStreamWriter(out2);
 			
@@ -547,13 +547,13 @@ public class SocketProgramming2 {
 	public static void main(String[] args) {
 		SocketProgramming2 VirtualModem=new SocketProgramming2();
 		
-		//VirtualModem.echo();
-		//VirtualModem.image();
-		//VirtualModem.temperature();
+		VirtualModem.echo();
+		VirtualModem.image();
+		VirtualModem.temperature();
 		VirtualModem.video();
-		//VirtualModem.audio();
-		//VirtualModem.audioAQ();
-		//VirtualModem.ithakiCopter();
-		//VirtualModem.obd();
+		VirtualModem.audio();
+		VirtualModem.audioAQ();
+		VirtualModem.ithakiCopter();
+		VirtualModem.obd();
 	}
 }
